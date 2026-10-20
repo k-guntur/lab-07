@@ -97,11 +97,11 @@ fun DriversScreen(navController: NavController) {
 
         // list to display drivers
         LazyColumn {
-            items(drivers) { race ->
+            items(drivers) { driver ->
                 Spacer(modifier = Modifier.height(12.dp))
 
                 Text(
-                    text = race,
+                    text = driver,
                     fontSize = 24.sp
                 )
             }
