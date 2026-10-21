@@ -49,8 +49,8 @@ class DriversScreenTest {
 
         // verify that the drivers list is clear
         composeTestRule
-            .onNodeWithText("")
-            .assertExists()
+            .onNodeWithTag("driverText")
+            .assertDoesNotExist()
 
         // return to the home screen
         composeTestRule

@@ -102,7 +102,8 @@ fun DriversScreen(navController: NavController) {
 
                 Text(
                     text = driver,
-                    fontSize = 24.sp
+                    fontSize = 24.sp,
+                    modifier = Modifier.testTag("driverText")
                 )
             }
         }
